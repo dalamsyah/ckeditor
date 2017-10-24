@@ -8,8 +8,14 @@
 	<body>
 		<textarea name="editor1"></textarea>
 		<script>
-			CKEDITOR.config.extraPlugins = 'mathjax';
+			CKEDITOR.config.extraPlugins = 'mathjax,font,image2,button,panelbutton';
+			//for upload image
+			//'uploadimage,uploadwidget,filetools,notificationaggregator';
+
 			CKEDITOR.config.mathJaxLib = '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML';
+
+			//CKEDITOR.config.uploadUrl = 'server/upload.php';
+
 			CKEDITOR.replace('editor1');
 		</script>
 	</body>
