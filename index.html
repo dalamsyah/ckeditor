@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CKEditor</title>
+		<script src="js/ckeditor/ckeditor.js"></script>
+	</head>
+	<body>
+		<textarea name="editor1"></textarea>
+		<script>
+			CKEDITOR.config.extraPlugins = 'mathjax';
+			CKEDITOR.config.mathJaxLib = '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML';
+			CKEDITOR.replace('editor1');
+		</script>
+	</body>
+</html>
